@@ -14,10 +14,10 @@ try:
         port=3306,
         database="techinfo"
     )
-    print("✅ Conectado ao MariaDB com sucesso!")
+    print(" Conectado ao MariaDB com sucesso!")
 
 except mariadb.Error as e:
-    print(f"❌ Erro ao conectar ao MariaDB: {e}")
+    print(f" Erro ao conectar ao MariaDB: {e}")
     exit()
 
 
@@ -34,7 +34,6 @@ JOIN produtos p ON vd.produto_id = p.id
 GROUP BY v.nome
 ORDER BY receita_total DESC;
 """
-
 df = pd.read_sql(query, conn)
 
 # Exibe os dados no console
