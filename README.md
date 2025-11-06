@@ -7,6 +7,7 @@ Script simples em Python para gerar um relatório de receita por vendedor a part
 Arquivos
 --------
 - [main.py](main.py) — Script principal que conecta ao banco, executa a consulta e plota o gráfico.
+- [`banco.sql`](banco.sql) — (opcional) script com schema e dados de exemplo.
 
 Requisitos
 ---------
@@ -36,3 +37,5 @@ O que esperar
 -------------
 - Saída no console com a tabela de receita por vendedor.
 - Exibição de um gráfico de barras com a receita total por vendedor.
+
+![Receita por Vendedor](exemplo_grafico.png)
